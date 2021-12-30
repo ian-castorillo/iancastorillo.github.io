@@ -7,14 +7,37 @@
 
 h1{
     font-family: "DINRegularAlternate";
-    font-stretch: ultra-expanded;
 }
 
-a{
+
+a:link, a:visited{
+    text-decoration: none;
+    font-family:"DINRegularAlternate";
+    display: inline-block;
+    margin-left:25%;
+    opacity:.5;
+    color:black;
+    transition: color .3s;
+}
+
+
+a:hover {
+    text-decoration: transparent;
     font-family: "DINRegularAlternate";
-    font-stretch: ultra-expanded;
-    display: inline-flex;
+    src: url(DINRegularAlternate.ttf);
+    display: inline-block;
     margin-left: 25%;
+    opacity: 1;
+}
+
+a:active{
+    text-decoration: none;
+    font-family: "DINRegularAlternate";
+    src: url(DINRegularAlternate.ttf);
+    display: inline-block;
+    margin-left: 25%;
+    opacity:.5;
+    color:black;
 }
 
 #archive{
@@ -22,6 +45,11 @@ a{
     src: url(DSCaslonGotischOsF.ttf);
     font-size: small;
     margin-left: 5%;
+    opacity: .5;
+}
+
+#archive:hover{
+    opacity:1;
 }
 
 
