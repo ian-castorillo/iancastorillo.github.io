@@ -55,7 +55,7 @@ a:active{
 
 
 #ianc{
-
+    display:inline-block;
     margin-left: 25%;
     margin-top: 20%;
 }
