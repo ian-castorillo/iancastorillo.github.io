@@ -27,6 +27,7 @@ a:hover {
     src: url(DINRegularAlternate.ttf);
     display: inline-block;
     margin-left: 25%;
+    color:black;
     opacity: 1;
 }
 
