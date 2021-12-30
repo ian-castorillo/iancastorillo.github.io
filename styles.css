@@ -1,0 +1,58 @@
+
+
+@font-face {
+    font-family: "DINRegularAlternate";
+    src: url(DINRegularAlternate.ttf);
+}
+
+h1{
+    font-family: "DINRegularAlternate";
+    font-stretch: ultra-expanded;
+}
+
+a{
+    font-family: "DINRegularAlternate";
+    font-stretch: ultra-expanded;
+    display: inline-flex;
+    margin-left: 25%;
+}
+
+#archive{
+    font-family: "DSCaslonGotischOsF";
+    src: url(DSCaslonGotischOsF.ttf);
+    font-size: small;
+    margin-left: 5%;
+}
+
+
+#ianc{
+
+    margin-left: 25%;
+    margin-top: 20%;
+}
+
+#couch{
+    width: 36%;
+    display: inline-block;
+    margin-left: 42.5%;
+    margin-right: 15%; 
+    margin-top: -20.25%;
+}
+
+#couch1{
+    width: 36%;
+    display: inline-block;
+    margin-left: 45%;
+    margin-top: -19.5%;
+    margin-right: 10%; 
+    opacity: .34;
+}
+
+#couch2{
+    width: 36%;
+    display: inline-block;
+    margin-top: -23%;
+    margin-right: 5%; 
+    opacity: .12;
+}
+
