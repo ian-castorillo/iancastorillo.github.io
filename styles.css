@@ -30,7 +30,7 @@ a:link, a:visited{
 
 
 a:hover {
-    text-decoration: transparent;
+    text-decoration: none;
     font-family: DINRegularAlternate;
     src: url(DINRegularAlternate.ttf);
     display: inline-block;
