@@ -3,6 +3,10 @@
 @font-face {
     font-family: DINRegularAlternate;
     src: url(DINRegularAlternate.ttf) format('opentype');
+
+}
+
+@font-face {
     font-family: DSCaslonGotischOsF;
     src: url(DSCaslonGotischOsF.ttf) format('opentype');
 }
