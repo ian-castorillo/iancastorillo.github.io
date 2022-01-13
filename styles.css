@@ -11,13 +11,28 @@
     src: url(fonts/DSCaslonGotischOsF.ttf) format('opentype');
 }
 
+@font-face {
+    font-family: GTAR;
+    src: url(fonts/GTAR.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: GTAB;
+    src: url(fonts/GTAB.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: GTABI;
+    src: url(fonts/GTABI.ttf) format('opentype');
+}
+
 #ianc{
-    font-family: DDIN;
-    src: url(DDIN.ttf);
+    font-family: GTAR;
+    opacity: .75;
 }
 
 .links {
-    font-family:DDIN;
+    font-family:GTAR;
     display: inline-block;
 }
 
@@ -42,7 +57,7 @@
 
 
 #archive{
-    font-family: DSCaslonGotischOsF;
+    font-family: GTAR;
     font-size: small;
     margin-left: 5%;
     opacity: .5;
