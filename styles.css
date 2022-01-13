@@ -48,6 +48,7 @@
     cursor: crosshair;
     margin-left: 25%;
     opacity: 1;
+    color:rgb(39, 35, 30);
 }
 
 .links:active{
