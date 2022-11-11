@@ -33,8 +33,9 @@
 }
 
 body{
-    background-image: url("couch.jpg") ;
-    }
+background-image: url("couch.jpg") ;
+}
+ 
 .links {
     font-family:GTAR;
     display: inline-block;
@@ -82,8 +83,6 @@ body{
     margin-left: 25%;
     margin-top: 20%;
 }
-
-
 
 
 
