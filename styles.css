@@ -22,8 +22,6 @@
 
 body {
   margin: 0px;
-  height: 90vh;
-  width: 100vw;
 }
 
 body .bodyContainer {
@@ -79,6 +77,7 @@ body .bodyContainer {
 
 footer {
   font-family: GT-America-Mono-Medium-Italic;
+  height: 10vh;
   font-size: .75rem;
   text-align: center;
   position:relative;
