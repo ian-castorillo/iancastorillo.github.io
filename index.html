@@ -1,40 +1,150 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      body {
-        text-align: center;
-        font-family: 'Space Mono', monospace;
-        overflow: hidden;
-      }
-      .centerScreen {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      vertical-align: center;
-      width: 100vw;
-      height: 100vh;
-      }
-      p {
-        line-height: normal;
-        display: inline-block;
-        vertical-align: middle;
-      }
-    </style>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> ian Castorillo / Under Development </title>
-    <meta name="description" content="">
-      <!-- Space Mono Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-      <!-- Space Mono Font -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
-  <body>
-    <div class = "centerScreen">
-      <p>under development, be back soon :)</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ianCastorillo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- start body container -->
+  <div class="bodyContainer">
+
+      <div class="couch">
+        <div class= "couchAsterisk">
+          <img src = "/images/asteriskLanding.gif" alt = "asteriskGif">
+        </div>
+      </div>
+    
+
+    <!-- start landing list -->
+    <div class="landingList">
+      <ul>
+        <li > <a class = "projects" href = "projects/projects.html"> PROJECTS...</a> </li>
+        <li > <a class = "music" href = "music/music.html"> MUSIC...</a> </li>
+        <li > <a class = "other" href = "other/other.html"> OTHER...</a> </li>
+      </ul>
+    </div> 
+    <!--  end landing LIST  -->
+
+  </div>
+  <!-- end body container -->
+
+
+
+  <footer>
+
+    <div class="socialLinks">
+      <a href = "https://www.instagram.com/iancastorillo/" target = "_blank"> instagram |</a>
+      <a href = "https://www.linkedin.com/in/iancastorillo" target = "_blank"> linkedin | </a>
+      <a href = "https://twitter.com/iancastorillo" target = "_blank"> twitter </a>
+
     </div>
-  </body>
+
+    <div class="currentResume">
+      <a href = "/admin/resume.html">resume</a>
+    </div>
+
+  </footer>
+
+
+<script>
+  console.log(";)")
+
+  let couchPhoto = document.querySelector(".couch");
+  let bodyContainer = document.querySelector(".bodyContainer");
+  let landingList = document.querySelector(".landingList")
+
+  let projectLink = document.querySelector(".projects");
+  let musicLink = document.querySelector(".music");
+  let otherLink = document.querySelector(".other");
+
+
+  bodyContainer.addEventListener('mousemove', function(event) {
+    console.log(event)
+    let height = getComputedStyle(bodyContainer).getPropertyValue('height')
+    let width = getComputedStyle(bodyContainer).getPropertyValue('width')
+
+    couchPhoto.style.backgroundPosition = `0% ${-(event.clientY)*.45}%`;
+  });
+
+
+
+  /* Landing List animations*/
+  projectLink.addEventListener('mouseover', function(event) {
+    projectLink.innerHTML = " >> PROJECTS"
+  });
+
+
+  projectLink.addEventListener('mouseleave', function(event) {
+    
+    setTimeout(function() {
+      projectLink.innerHTML = "PROJECTS"
+    }, 200)
+    setTimeout(function() {
+      projectLink.innerHTML = "PROJECTS."
+    }, 400)
+    setTimeout(function() {
+      projectLink.innerHTML = "PROJECTS.."
+    }, 500)   
+    setTimeout(function() {
+      projectLink.innerHTML = "PROJECTS..."
+    }, 800)
+
+  });
+
+  musicLink.addEventListener('mouseover', function(event) {
+    musicLink.innerHTML = " >> MUSIC"
+  });
+
+  musicLink.addEventListener('mouseleave', function(event) {
+    
+    setTimeout(function() {
+      musicLink.innerHTML = "MUSIC"
+    }, 200)
+    setTimeout(function() {
+      musicLink.innerHTML = "MUSIC."
+    }, 400)
+    setTimeout(function() {
+      musicLink.innerHTML = "MUSIC.."
+    }, 500)   
+    setTimeout(function() {
+      musicLink.innerHTML = "MUSIC..."
+    }, 800)
+
+  });
+
+
+  otherLink.addEventListener('mouseover', function(event) {
+    otherLink.innerHTML = " >> OTHER"
+  });
+
+  otherLink.addEventListener('mouseleave', function(event) {
+
+    setTimeout(function() {
+      otherLink.innerHTML = "OTHER"
+    }, 200)
+    setTimeout(function() {
+      otherLink.innerHTML = "OTHER."
+    }, 400)
+    setTimeout(function() {
+      otherLink.innerHTML = "OTHER.."
+    }, 500)   
+    setTimeout(function() {
+      otherLink.innerHTML = "OTHER..."
+    }, 800)
+
+  });
+
+
+
+
+</script>
+
+
+
+</body>
+
+
 </html>

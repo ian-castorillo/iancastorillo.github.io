@@ -1,0 +1,43 @@
+
+
+@font-face {
+  font-family: DMMono-MediumItalic;
+  src: url(/fonts/DMMono-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: GT-America-Mono-Regular;
+  src: url(../fonts/GT-America-Mono-Regular.otf);
+}
+
+
+body {
+  margin: 0px;
+
+}
+
+body .bodyContainer {
+  width: 100vw;
+  height: 95vh;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeHolderText {
+  font-family: DMMono-MediumItalic;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+
+footer a {
+  font-family:GT-America-Mono-Regular;
+  text-decoration: none;
+  color: #252323;
+}

@@ -1,0 +1,118 @@
+
+@font-face {
+  font-family: DMMono-MediumItalic;
+  src: url(../fonts/DMMono-MediumItalic.ttf);
+}
+
+@font-face {
+  font-family: NeueHaasUnica-LightItalic;
+  src: url(../fonts/NeueHaasUnica-LightItalic.ttf);
+}
+
+@font-face {
+  font-family: GT-America-Mono-Regular;
+  src: url(../fonts/GT-America-Mono-Regular.otf);
+}
+
+@font-face {
+  font-family: GT-Super-Display-Regular;
+  src: url(../fonts/GT-Super-Display-Regular.otf);
+}
+
+body {
+  margin: 0px;
+  color:hsl(133, 12%, 58%);
+  background-color: hsl(0, 5%, 15%);
+}
+
+body .bodyContainer {
+  overflow: hidden;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.asterisk {
+  height: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.asterisk img {
+  scale: 130%;
+}
+
+.stuff, .photo, .climb {
+  display: flex;
+  height: 15%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.headerStuff, .headerPhoto, .headerClimb {
+  font-family: GT-America-Mono-Regular;
+  font-size: 6rem;
+  transition: all 500ms ease-in-out;
+}
+
+.textStuff, .textPhoto, .textClimb {
+  font-family: GT-Super-Display-Regular;
+  width: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.textStuff, .textClimb {
+  text-align: right;
+}
+
+
+.headerPhoto {
+  order: 2;
+}
+
+.textPhoto {
+  order: 1;
+}
+
+
+
+
+
+footer {
+  text-align: center;
+}
+
+footer a {
+  font-family: GT-America-Mono-Regular;
+  text-decoration: none;
+  color:hsl(133, 12%, 58%);
+}
+
+
+@media screen and (min-width: 768px) {
+  
+  .asterisk img {
+    scale: 200%;
+  }
+
+  .headerStuff, .headerPhoto, .headerClimb {
+    font-size: 8rem;
+  }
+
+  .textStuff, .textPhoto, .textClimb {
+    font-size: 1.5rem;
+    width: 88px;
+  }
+
+  .stuff, .photo, .climb {
+    justify-content: space-evenly;
+  }
+
+  footer {
+    font-size: 1.4rem;
+  }
+
+
+}
