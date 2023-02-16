@@ -22,12 +22,13 @@
 
 body {
   margin: 0px;
+  overflow: hidden;
 }
 
 body .bodyContainer {
  display: flex;
  flex-direction: column;
- overflow-x: hidden;
+ overflow: hidden;
  height: 90vh;
  justify-content: space-around;
  gap: 2rem;
@@ -36,8 +37,8 @@ body .bodyContainer {
 .couch {
   background-image: url(images/couchLanding.png);
   display: flex;
-  width: 438px;
-  height: 281px;
+  width: 40rem;
+  height: 20rem;
   background-size: cover;
   margin-left: 65px;
   margin-top: 80px;
