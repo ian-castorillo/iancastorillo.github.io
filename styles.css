@@ -24,7 +24,7 @@ body {
   margin: 0px;
 }
 
-.bodyContainer {
+body .bodyContainer {
  display: flex;
  flex-direction: column;
  overflow-x: hidden;
