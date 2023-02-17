@@ -29,7 +29,6 @@ body .bodyContainer {
  display: flex;
  flex-direction: column;
  overflow: hidden;
- height: 90vh;
  justify-content: space-around;
  gap: 2rem;
 }
@@ -78,7 +77,6 @@ body .bodyContainer {
 
 footer {
   font-family: GT-America-Mono-Medium-Italic;
-  height: 10vh;
   font-size: .75rem;
   text-align: center;
   position:relative;
