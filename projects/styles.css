@@ -1,0 +1,116 @@
+
+
+@font-face {
+  font-family: GTS_R;
+  src: url(../fonts/GT-Super-Text-Book.otf);
+}
+
+@font-face {
+  font-family: GTS_MI;
+  src: url(../fonts/GT-Super-Text-Medium-Italic.otf);
+}
+
+@font-face {
+  font-family: GTAMR;
+  src: url(../fonts/GT-America-Mono-Regular.otf);
+}
+* {
+  margin: 0; 
+}
+
+.swordAndShield {
+  filter: invert(91%) sepia(8%) saturate(555%) hue-rotate(318deg) brightness(110%) contrast(92%);
+  height: 16rem;
+}
+
+
+body {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../couchLanding.png);
+  background-size: cover;
+  color:#F5F1ED;
+}
+
+
+p {
+  font-family: GTS_R;
+  font-size: 1.6rem;
+  color: #F5F1ED;
+}
+
+span {
+  font-family: GTS_MI;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5rem;
+}
+
+.projectCaptions {
+  color: #F5F1ED;
+  font-family: GTAMR;
+}
+/* Bolognese Block Start */
+
+.bolognese {
+  width: 100vw;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  font-family: GTAMR;
+  gap: .5rem;
+  align-items: center;
+  text-align: center;
+}
+
+iframe {
+  width: 80%;
+}
+
+/* Bolognese Block end */
+
+
+/* DulceBeerWine Block Start */
+
+.dulceBeerWine {
+  width: 100vw;
+}
+
+.dulceBeerWine img {
+  width: 80%;
+}
+
+@media screen and (min-width: 40em) {
+  .dulceBeerWine img {
+    max-width: 38rem;
+  }
+}
+/* DulceBeerWine Block end */
+
+
+@media screen and (min-width: 70em) {
+
+  body {
+    height: 100dvh;
+  }
+  .project {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .bolognese {
+    width: 30vw;
+  }
+
+  .dulceBeerWine {
+    width: 30vw;
+  }
+}

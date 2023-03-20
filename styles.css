@@ -1,170 +1,96 @@
 
 
-/* @font-face {
-  font-family: asterisks;
-  src: url(fonts/GT-America-Mono-Light-Italic.otf);
-} */
 
 @font-face {
-  font-family: GT-America-Mono-Medium;
-  src: url(fonts/GT-America-Mono-Medium.otf);
+  font-family: GTAM_R;
+  src: url(fonts/GT-America-Mono-Regular.otf);
 }
 
-@font-face {
-  font-family: GT-America-Mono-Medium-Italic;
-  src: url(fonts/GT-America-Mono-Medium-Italic.otf);
+
+* {
+  margin: 0;
 }
 
-@font-face {
-  font-family: GT-Super-Text-Book;
-  src: url(fonts/GT-Super-Text-Book.otf);
+h1 {
+  display: none;
 }
+
 
 body {
-  margin: 0px;
+  height: 100dvh;
+  text-align: center;
+  overflow: hidden;
+  font-family: GTAM_R;
+  background-image: url("couchLanding.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.swordAndShield {
+  filter: invert(91%) sepia(8%) saturate(555%) hue-rotate(318deg) brightness(110%) contrast(92%);
+}
+
+
+a {
+  text-decoration: none;
+  color: #F5F1ED;
+}
+
+body .landingList {
   overflow: hidden;
 }
 
-body .bodyContainer {
- display: flex;
- flex-direction: column;
- overflow: hidden;
- justify-content: space-around;
- gap: 2rem;
-}
-
-.couch {
-  background-image: url(images/couchLanding.png);
-  display: flex;
-  width: 40rem;
-  height: 20rem;
-  background-size: cover;
-  margin-left: 65px;
-  margin-top: 80px;
-  align-items: center;
-}
-
-.couchAsterisk img {
-  height: 30%;
-  width: 30%;
-  position:relative;
-  left: 15%;
-}
-
-
-
 .landingList {
-  font-family: GT-America-Mono-Medium;
-  font-size: 3rem;
-  width: 500px;
-}
-
-.landingList ul {
-  list-style: none;
-  padding-inline-start: 65px;
-  position: relative;
-  margin: 0px;
-  height: 350px;
-  display:flex;
+  text-align: left;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-size: 2rem;
+  margin-left: 4rem;
+  gap: 3rem;
 }
 
-.landingList li a {
-  text-decoration: none;
-  color: hsl(0, 5%, 15%);
+.landingListBar {
+  width: 277px;
+  height: 15px;
+  background-color: #F5F1ED;
 }
 
 footer {
-  font-family: GT-America-Mono-Medium-Italic;
-  font-size: .75rem;
-  text-align: center;
-  position:relative;
-  bottom: -20px;
+  display: flex;
+  gap: 4rem;
+  position: absolute;
+  bottom: 1rem;
+  padding: 4rem;
+  color: #F5F1ED;
 }
 
-footer a {
-  text-decoration: none;
-  color:hsl(0, 5%, 15%);
-  opacity: 50%;
-}
 
-.currentResume {
-  margin-top: 8px;
-}
 
-footer a:active {
-  text-decoration: none;
-  color: hsl(131, 12%, 38%);
-  opacity: 50%;
-}
+@media screen and (min-width: 40em) {
 
-@media screen and (min-width: 768px) {
-
-  .couch {
-    background-image: url(images/couchLanding.png);
-    display: flex;
-    width: 690px;
-    height: 428px;
-    margin-top: 0px;
-    margin-left: 0px;
-    background-size: 150% 150%;
-    align-items: center;
+  .swordAndShield {
+    height: 40rem;
+    margin: auto;
   }
 
-  .couchAsterisk img {
-    height: 70%;
-    width: 70%;
+  .landingList {
+    margin-left: 4rem;
+    position: absolute;
+    bottom: 10rem;
   }
+}
 
-  .bodyContainer {
-    display: flex;
+
+@media screen and (min-width: 62em) {
+
+  footer {
     flex-direction: column;
-    overflow-x: hidden;
-    height: 90vh;
-    justify-content: space-evenly;
-    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    right: 25rem;
+    bottom: 5.8rem;
   }
-   
-  .landingList {
-    font-family: GT-America-Mono-Medium;
-    font-size: 4rem;
-    width: 600px;
-  }
+
+
 }
-
-@media screen and (min-width: 1194px) {
-
-  .couch {
-    background-image: url(images/couchLanding.png);
-    display: flex;
-    width: 580px;
-    height: 360px;
-    margin-top: 0px;
-    margin-left: 60px;
-    background-size: 150% 150%;
-    align-items: center;
-  }
-
-  .couchAsterisk img {
-    height: 50%;
-    width: 50%;
-  }
-
-  .bodyContainer {
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
-    height: 90vh;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: .05rem;
-  }
-
-  .landingList {
-    font-family: GT-America-Mono-Medium;
-    font-size: 4rem;
-    width: 600px;
-  }
-   
-}
+  
