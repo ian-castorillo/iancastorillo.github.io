@@ -51,7 +51,9 @@ span {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 5rem;
+  gap: 2rem;
+  position: absolute;
+  top: 9rem;
 }
 
 .projectCaptions {
@@ -112,5 +114,10 @@ iframe {
 
   .dulceBeerWine {
     width: 30vw;
+  }
+
+  .SnS {
+    position: absolute;
+    bottom: 1rem;
   }
 }

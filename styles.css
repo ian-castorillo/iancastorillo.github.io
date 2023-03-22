@@ -59,8 +59,8 @@ footer {
   display: flex;
   gap: 4rem;
   position: absolute;
-  bottom: 1rem;
-  padding: 4rem;
+  padding-top: 1.75rem;
+  padding-left: 4rem;
   color: #F5F1ED;
 }
 
@@ -78,17 +78,20 @@ footer {
     position: absolute;
     bottom: 10rem;
   }
+
+  footer {
+    flex-direction: column;
+    bottom: 10rem;
+    right: 7rem;
+    
+  }
 }
 
 
 @media screen and (min-width: 62em) {
 
   footer {
-    flex-direction: column;
-    gap: 2rem;
-    position: absolute;
-    right: 25rem;
-    bottom: 5.8rem;
+    right: 30rem;
   }
 
 
