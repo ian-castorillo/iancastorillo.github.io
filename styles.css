@@ -2,15 +2,46 @@
 
 body {
   margin: 0;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: url(couchLanding.png);
+  background-size: cover;
 }
 
 
 .ianMelchor {
-  font-family:"neue-haas-unica", sans-serif;
+  font-family:"neue-haas-grotesk-display", sans-serif;
   font-weight: 600;
   font-style:normal;
+  height: 30%;
   font-size: 100pt;
 }
 
+.homepageLinks {
+  list-style: none;
+  font-family: "neue-haas-grotesk-display", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  min-height: fit-content;
+  font-size: 45pt;
+  margin-left: 5%;
+}
+
+
+.footer {
+  margin-top: auto;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30pt;
+  padding-right: 15pt;
+}
