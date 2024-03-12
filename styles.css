@@ -16,6 +16,7 @@ body {
   font-weight: 600;
   font-style:normal;
   font-size: 100pt;
+  margin-top: 10vh;
 }
 
 .homepageLinks {
@@ -32,7 +33,7 @@ body {
 .footer {
   margin-top: auto;
   margin-left: 5%;
-  padding-bottom: 30%;
+  padding-bottom: 30vh;
 }
 
 .footer > a {
