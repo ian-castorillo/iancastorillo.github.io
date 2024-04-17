@@ -4,49 +4,24 @@ body {
   margin: 0;
   min-height: 100vh;
   overflow: hidden;
+  background: white;
   display: flex;
-  flex-direction:column;
-  background: url(couchLanding.png);
-  background-size: cover;
 }
 
+.landing {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin: auto;
+}
 
 .ianMelchor {
-  font-family:"neue-haas-grotesk-display", sans-serif;
-  font-weight: 600;
-  font-style:normal;
-  font-size: 100pt;
-  margin-top: 10vh;
-}
-
-.homepageLinks {
-  list-style: none;
   font-family: "neue-haas-grotesk-display", sans-serif;
   font-weight: 600;
   font-style: normal;
-  min-height: fit-content;
-  font-size: 45pt;
-  margin-left: 5%;
-  opacity: 95%;
 }
-
-.footer {
-  margin-top: auto;
-  margin-left: 5%;
-  margin-bottom: 20%;
-}
-
-.footer > a {
-  text-decoration: none;
-  color: black;
-  font-family: "neue-haas-unica", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 30pt;
-  padding-right: 15pt;
-}
-
-.footer > a:hover {
-  transition: 0.5s color;
-  color: white;
+.couchLandingPhoto {
+  height: 20vh;
+  width: auto;
 }
