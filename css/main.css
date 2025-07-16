@@ -1,0 +1,76 @@
+
+
+@font-face {
+  font-family: 'TAYBigBird';
+  src: url('/fonts/BigBird/TAYBigBird.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+body {
+  height: calc(var(--vh, 1vh) * 100);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-top: env(safe-area-inset-top);
+  font-family: TAYBigBird;
+  font-size: smaller;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.topSquare {
+  display: flex;
+  height: 121px;
+  width: 321px;
+}
+
+.bottomSquare {
+  display: flex;
+  flex-direction: column;
+  width: 321px;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: space-between;
+}
+
+a, .footerLinks {
+  color: inherit;
+  text-decoration: none;
+  cursor:crosshair;
+}
+.indented {
+  padding-left: 2em;
+}
+
+.ianCastorillo {
+  flex: 1;
+  font-family: "TAYBigBird", sans-serif;
+  word-spacing: 5.2em;
+}
+
+.ianCastorilloRotate{
+  display: flex;
+  gap: .3rem;
+  margin-left: .4rem;
+}
+
+.ianCastorilloRotate span {
+  display: inline-block;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  line-height: 1;
+}
+
+.links {
+  text-align: right;
+  flex: 1;
+}
