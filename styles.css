@@ -17,8 +17,9 @@ body {
 }
 
 .ianMelchor {
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  font-weight: 600;
+  font-family: "andale-mono", sans-serif;
+  font-weight: 300;
+  font-size: small;
   font-style: normal;
 }
 .couchLandingPhoto {
