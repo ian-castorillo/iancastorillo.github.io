@@ -28,13 +28,13 @@ body {
 .topSquare {
   display: flex;
   height: 121px;
-  width: 321px;
+  width: 300px;
 }
 
 .bottomSquare {
   display: flex;
   flex-direction: column;
-  width: 321px;
+  width: 300px;
 }
 
 .footerLinks {
@@ -45,7 +45,6 @@ body {
 a, .footerLinks {
   color: inherit;
   text-decoration: none;
-  cursor:crosshair;
 }
 .indented {
   padding-left: 2em;
@@ -73,4 +72,9 @@ a, .footerLinks {
 .links {
   text-align: right;
   flex: 1;
+}
+
+.links a {
+  display: inline-block;
+  margin-bottom: .5rem;
 }
