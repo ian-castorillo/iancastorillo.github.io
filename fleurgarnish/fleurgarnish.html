@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IANCASTORILLO</title>
+  <link rel="stylesheet" href="/css/fleurgarnish.css">
+  <link rel="preload" href="/fonts/BigBird/TAYBigBird.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+  <img src="/fleurgarnish/fleurgarnishLanding.svg" alt="fleur garnish micrographics inspired design"/>
+
+  <a class ="home" href="/index.html">home</a>
+
+  <script>
+    function setVw() {
+      // Calculate 1% of the viewport width
+      let vw = window.innerWidth * 0.01;
+      // Set CSS variable --vw to that value in pixels
+      document.documentElement.style.setProperty('--vw', `${vw}px`);
+    }
+    // Run on initial load
+    setVw();
+    // Run on resize
+    window.addEventListener('resize', setVw);    
+  </script>
+</body>
+
+
+
+
+
+
+
+</html>
