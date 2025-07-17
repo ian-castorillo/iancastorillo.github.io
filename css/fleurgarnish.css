@@ -31,7 +31,7 @@ body {
 }
 
 
-img {
+object {
   height: calc(var(--vh, 1vh) * 90);
   width: auto;
 }
