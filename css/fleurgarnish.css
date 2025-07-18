@@ -32,6 +32,6 @@ body {
 
 
 object {
-  height: calc(var(--vh, 1vh) * 90);
-  width: auto;
+  height: 70%;
+  width: calc(var(--vw), 1vw) * 50;
 }
