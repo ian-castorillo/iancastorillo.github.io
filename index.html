@@ -11,25 +11,10 @@
 
 <body>
 
-  
-<div class="topSquare">
-  <div class="ianCastorillo" >
-    IAN CASTORILLO
-    <div class="ianCastorilloRotate" data-text="ianCastorillo">
-      IAN CASTORILLO
-    </div>
-  </div>
-
-  <div class="links">
-    <a href="/forgarnish/forgarnish.html"> >FORGARNISH </a> <br>
-    <a href="/fleurgarnish/fleurgarnish.html"> >FLEURGARNISH </a> <br> <br>
-    <a href="#"> >PROJECTS </a> <br>
-    <a href="#"> >FOOD </a> <br>
-    <a href="#"> >ROUTINE </a> <br>
-  </div> <p></p>
-</div>
 
 
+
+<!-- bottom square start -->
 <div class="bottomSquare">
   <div>
     WHITE SHIRT OF THE MONTH
@@ -48,10 +33,28 @@
     <a href="#"> >CLOSET </a>
     <a href="#" > >APARTMENT </a>
   </div>  
+</div>
+<!-- bottom square end -->
+ 
+<!-- topSquare start -->
+<div class="topSquare">
+  <div class="ianCastorillo" >
+    IAN CASTORILLO
+    <div class="ianCastorilloRotate" data-text="ianCastorillo">
+      IAN CASTORILLO
+    </div>
+  </div>
 
+  <div class="links">
+    <a href="/forgarnish/forgarnish.html"> >FORGARNISH </a> <br>
+    <a href="/fleurgarnish/fleurgarnish.html"> >FLEURGARNISH </a> <br> <br>
+    <a href="#"> >PROJECTS </a> <br>
+    <a href="#"> >FOOD </a> <br>
+    <a href="#"> >ROUTINE </a> <br>
+  </div> <p></p>
 </div>
 
-
+<!-- topSquare end -->
 
   <script src="/js/main.js">
 
@@ -60,6 +63,14 @@
     }
     setVh();
     window.addEventListener('resize', setVh);
+
+    function setVw() {
+      document.documentElement.style.setProperty('--vw', `${window.innerWidth * 0.01}px`);
+    }
+    setVw();
+    window.addEventListener('resize', setVw);
+
+
   </script>
 </body>
 
