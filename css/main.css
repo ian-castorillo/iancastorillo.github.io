@@ -23,11 +23,8 @@ body {
   padding: 1rem;
   box-sizing: border-box;
   overflow: hidden;
-  background-image: url('/photos/couchLanding.png');
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  color:whitesmoke;
+  background-color: whitesmoke;
+  color: #0d0d0d;
 }
 
 .topSquare {
@@ -88,42 +85,6 @@ a, .footerLinks {
 .indented {
   display: inline-block;
   position: relative;
-  color: white;
+  color: #0d0d0d;
   font-family: monospace;
-  transition: all 0.1s ease-in-out;
-}
-
-.indented.glitch::before,
-.indented.glitch::after {
-  content: attr(data-text);
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: white;
-  background: black;
-  width: 100%;
-  overflow: hidden;
-  clip-path: inset(0 0 0 0);
-}
-
-.indented.glitch::before {
-  left: 2px;
-  text-shadow: -2px 0 wheat;
-  animation: glitchTop 0.1s infinite linear alternate-reverse;
-}
-
-.indented.glitch::after {
-  left: -2px;
-  text-shadow: 2px 0 whitesmoke;
-  animation: glitchBottom 0.1s infinite linear alternate-reverse;
-}
-
-@keyframes glitchTop {
-  0% { clip-path: inset(0 0 30% 0); }
-  100% { clip-path: inset(10% 0 40% 0); }
-}
-
-@keyframes glitchBottom {
-  0% { clip-path: inset(60% 0 0 0); }
-  100% { clip-path: inset(40% 0 10% 0); }
 }
